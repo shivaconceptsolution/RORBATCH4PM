@@ -1,18 +1,42 @@
 <h1>Home#services</h1>
+<script type="text/javascript">
+	
+function validate()
+{
+     if(document.getElementById("txtname").value.length==0)
+     {
+     	alert("name is required");
+     	return false;
+     }
+     else if(!isNaN(document.getElementById("txtname").value))
+     {
+     	alert("name should be aphabetical");
+     	return false;
+     }
+     else if(!document.getElementById("course1").checked)
+     {
+     	alert("choose course");
+     	return false;
+     }
+
+}
+
+
+</script>
 <center>
 <form action="/home/servicelogic" name="frm1"  method="get">
 
 Enter Name
 <br>
-<input type="text" name="txtname"  />
+<input type="text" name="txtname" id="txtname"  />
 <br>
 Higher Qualification
 <br>
-<input type="radio" name="course1" value="12th" />12th
+<input type="radio" name="course1" value="12th" id="course1" />12th
 <br>
-<input type="radio" name="course1" value="BCA" />Graduate
+<input type="radio" name="course1" value="BCA" id="course2" />Graduate
 <br>
-<input type="radio" name="course1" value=MCA" />POST Graduate
+<input type="radio" name="course1" value=MCA" id="course3" />POST Graduate
 <br>
 Courses
 <br>
@@ -39,7 +63,7 @@ Interested Course
 <option value="Database Courses">Database Courses</option>
 </select>
 <br>
-<input type="submit" name="btnsubmit" value="Click" />
+<input type="submit" name="btnsubmit" value="Click" onclick="return validate()"  />
 
 
 </form>
