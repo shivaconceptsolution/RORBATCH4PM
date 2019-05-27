@@ -1,0 +1,46 @@
+<h1>Home#services</h1>
+<center>
+<form action="/home/servicelogic" name="frm1"  method="get">
+
+Enter Name
+<br>
+<input type="text" name="txtname"  />
+<br>
+Higher Qualification
+<br>
+<input type="radio" name="course1" value="12th" />12th
+<br>
+<input type="radio" name="course1" value="BCA" />Graduate
+<br>
+<input type="radio" name="course1" value=MCA" />POST Graduate
+<br>
+Courses
+<br>
+<input type="checkbox" name="course[]" value="C" checked="false"   />C
+<br>
+<input type="checkbox" name="course[]" value="CPP" checked="false"  />CPP
+<br>
+<input type="checkbox" name="course[]" value="Python" checked="false"   />Python
+<br>
+Select Location
+<br>
+<select name="location">
+<option value="VijayNagar">VijayNagar</option>
+<option value="Palasia">Palasia</option>
+<option value="Bhawarkua">Bhawarkua</option>
+</select>
+<br>
+<br>
+Interested Course 
+<br>
+<select name="location[]" multiple="true">
+<option value="Certification">Certification</option>
+<option value="Job Oriented">Job Oriented</option>
+<option value="Database Courses">Database Courses</option>
+</select>
+<br>
+<input type="submit" name="btnsubmit" value="Click" />
+
+
+</form>
+</center>

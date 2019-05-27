@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scsproject</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    </head>
+
+  <body>
+    <header>
+      <div style="float:left;">
+      <ul>
+      <li><a href="/home/index">Home</a></li><li><a href="/home/about">About us</a></li><li>
+        <a href="/home/services">Services</a>
+      </li>
+      </ul>
+    </div>
+    <div style="float:right;">
+   <a href="https://www.youtube.com/shivaconceptsolution" target="_blank">   <img src="/assets/maxresdefault.jpg" width="100" height="80"  /></a>
+    </div>
+    <marquee><h3>We provide Free Live Video Session for Programming languages</h3></marquee>
+    </header>
+    <section>
+     <%= yield %>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+</html>
